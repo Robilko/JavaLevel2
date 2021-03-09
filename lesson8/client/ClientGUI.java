@@ -140,7 +140,6 @@ public class ClientGUI extends JFrame {
     }
 
     // имплиментируем нужные нам Callback-i
-    // t.e. говорим ClientNetwork, какое поведение мы ждем от него в какой ситуации
     private void setCallBacks() {
         //при получении сообщения от сервера добавляем его в textArea
         this.clientNetwork.setCallOnMsgRecieved(message -> textArea.append(message + "\n"));

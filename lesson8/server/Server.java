@@ -16,7 +16,7 @@ public class Server {
 
     public Server() {
         this.clients = new ArrayList<>();
-        try (ServerSocket serverSocket = new ServerSocket(8189)) {// запускаем сервер
+        try (ServerSocket serverSocket = new ServerSocket(8189)) {// запускаем сервер.
             System.out.println("Server is listening on 8189");
             while (true) {
                 Socket socket = serverSocket.accept(); // ждем клиентов

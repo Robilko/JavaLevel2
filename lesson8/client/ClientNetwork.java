@@ -24,7 +24,7 @@ public class ClientNetwork {
                 boolean goOn = true;
                 boolean isAuthorized = false;
                 try {
-                    while (!isAuthorized && goOn) { // цикл авторизации
+                    while (!isAuthorized && goOn) { // цикл авторизации.
                         String message = in.readUTF(); // читаем сообщения сервера
                         if (message.startsWith("/authok")) { // если от сервера пришло сообщение,
                             // что авторизация прошла успешно то

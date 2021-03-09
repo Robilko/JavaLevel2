@@ -91,7 +91,7 @@ public class ClientHandler {
         return nickname;
     }
 
-    public void disconnect() { // отключаемся
+    public void disconnect() { // отключаемся.
         sendMessage("/end");
         System.out.println("disconnected " + nickname);
         server.unsubscribe(this);
